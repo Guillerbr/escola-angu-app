@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunosComponent implements OnInit {
   alunos :Array<any> = new Array();
-  constructor() { }
+
+  constructor(private alunosService: AlunosService) { }
 
   ngOnInit() {
+    this.listarAlunos();
+  }
+
+  listarAlunos(){
+
   }
 
 }

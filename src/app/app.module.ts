@@ -1,8 +1,10 @@
+import { AlunosService } from './alunos.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AlunosComponent } from './alunos/alunos.component';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,7 @@ import { AlunosComponent } from './alunos/alunos.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AlunosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
